@@ -1,1 +1,14 @@
-<p>graficas1 works!</p>
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{ this.graficos.grafico1.leyenda }}</h4>
+        <app-grafico-dona
+          [InputDoughnutChartData]="this.graficos.grafico1.data"
+          [InputDoughnutChartLabels]="this.graficos.grafico1.labels"
+          [InputDoughnutChartType]="this.graficos.grafico1.type"
+        ></app-grafico-dona>
+      </div>
+    </div>
+  </div>
+</div>
