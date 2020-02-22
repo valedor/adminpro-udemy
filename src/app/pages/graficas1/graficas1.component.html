@@ -11,4 +11,43 @@
       </div>
     </div>
   </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{ this.graficos.grafico2.leyenda }}</h4>
+        <app-grafico-dona
+          [InputDoughnutChartData]="this.graficos.grafico2.data"
+          [InputDoughnutChartLabels]="this.graficos.grafico2.labels"
+          [InputDoughnutChartType]="this.graficos.grafico2.type"
+        ></app-grafico-dona>
+      </div>
+    </div>
+  </div>
 </div>
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{ this.graficos.grafico3.leyenda }}</h4>
+        <app-grafico-dona
+          [InputDoughnutChartData]="this.graficos.grafico3.data"
+          [InputDoughnutChartLabels]="this.graficos.grafico3.labels"
+          [InputDoughnutChartType]="this.graficos.grafico3.type"
+        ></app-grafico-dona>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{ this.graficos.grafico4.leyenda }}</h4>
+        <app-grafico-dona
+          [InputDoughnutChartData]="this.graficos.grafico4.data"
+          [InputDoughnutChartLabels]="this.graficos.grafico4.labels"
+          [InputDoughnutChartType]="this.graficos.grafico4.type"
+        ></app-grafico-dona>
+      </div>
+    </div>
+  </div>
+</div>
+
