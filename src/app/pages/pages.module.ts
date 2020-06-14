@@ -15,6 +15,7 @@ import { ProgressComponent } from "./progress/progress.component";
 // Graficas
 import { Graficas1Component } from "./graficas1/graficas1.component";
 import { ChartsModule } from "ng2-charts";
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ChartsModule } from "ng2-charts";
     ProgressComponent,
     Graficas1Component,
     IncrementadorComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    AccountSettingsComponent
   ],
   exports: [DashboardComponent, ProgressComponent, Graficas1Component],
   imports: [SharedModule, PAGES_ROUTES, FormsModule, ChartsModule]
