@@ -9,6 +9,10 @@ import { APP_ROUTES } from './app.routes';
 import { PagesModule } from "./pages/pages.module";
 // import { SharedModule } from './shared/shared.module';
 
+//Servicios
+// import { SettingsService } from "./services/service.index";
+import {ServiceModule} from './services/service.module';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from "./login/register.component";
@@ -20,14 +24,16 @@ import { RegisterComponent } from "./login/register.component";
     LoginComponent,      
     RegisterComponent,
   ],
+  //Los módulos van en los imports
   imports: [
     BrowserModule,  
     PagesModule,  
     // SharedModule,
     APP_ROUTES,
-    FormsModule
-  ],
-  providers: [],
+    FormsModule,
+    ServiceModule
+  ],  
+  providers:[],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
